@@ -25,15 +25,18 @@ Data Augmentation: Apply transformations such as random cropping, flipping, and 
 
 Pre-trained Weights: Initialize ResNet50 with weights pre-trained on ImageNet, which can be fine-tuned for CIFAR-10.
 Modifying the Network: Replace the top layer of ResNet50 to match the number of classes in CIFAR-10 (10 classes).
+
 3.Training:
 
 Loss Function: Use categorical cross-entropy as the loss function.
 Optimizer: Employ an optimizer like Adam or SGD with an appropriate learning rate.
 Training Process: Train the model on the augmented training data, monitor performance on a validation set, and apply techniques such as learning rate decay or early stopping.
+
 4.Evaluation:
 
 Accuracy: Evaluate the model on the test set to determine its accuracy in recognizing objects.
 Confusion Matrix: Generate a confusion matrix to analyze the model's performance across different classes.
+
 5.Fine-Tuning and Optimization:
 
 Hyperparameter Tuning: Experiment with different hyperparameters, such as learning rates, batch sizes, and data augmentation strategies, to optimize performance.
